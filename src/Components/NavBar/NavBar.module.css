@@ -1,0 +1,63 @@
+.main {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #070319;
+  color: #ffffff;
+  position: fixed;
+}
+
+.appIcon {
+  font-weight: 800;
+  font-size: 24px;
+}
+.inputCont {
+  display: flex;
+  width: 500px;
+  margin: 0 8px;
+  /* border: 1px solid white; */
+}
+.icon {
+  height: 24px;
+  width: 6%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: none;
+  outline: 0;
+  background-color: #ffffff;
+  padding: 2px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  height: 24px;
+  width: 94%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: none;
+  outline: 0;
+  background-color: #ffffff;
+  padding: 2px 4px;
+}
+
+.iconCont {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  .input {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+}

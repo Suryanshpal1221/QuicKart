@@ -1,0 +1,77 @@
+.checkeditem {
+  border: 1px solid rgb(235, 235, 235);
+  display: flex;
+  flex-direction: row;
+  margin: 8px 0;
+  justify-content: space-between;
+}
+
+.img {
+  flex: 1;
+  height: 150px;
+  width: 170px;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.title {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.title :first-child {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.price {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 0;
+  align-items: center;
+}
+
+.price :first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.price :last-child {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(231, 2, 2);
+}
+.price :last-child:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .checkeditem {
+    flex-direction: column;
+    padding: 12px 0;
+    align-items: center;
+  }
+  .title {
+    flex-direction: row;
+    padding: 0 16px;
+    margin: 12px 0;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .price {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 16px;
+    width: 90%;
+  }
+}
